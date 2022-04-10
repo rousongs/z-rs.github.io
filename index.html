@@ -1,11 +1,340 @@
-<html>
-<title>张荣松 | 在线简历</title>
-<!-- <frameset rows="100%,*">  --!>
-<!--  	<frame	name="frame1"	src="https://tcc.rousongs.com/resume.html"/> --!>
-<!-- </frameset> --!>
- <body bgcolor="#000000">
-<!--  <p>这是我的简历，内容正在建设中。</p>  --!>
-<!--  <p>This is my resume, and it is coming soon.</p> --!>
-<center><img style="width:50%" src="/assets/images/111111.png"></center>
- </body>
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>张荣松 | 在线简历</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+
+				<h2 class="name"><b>张荣松</b></h2>
+                <h4 class="info-job">山东济南</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>张荣松 / 男 / 32岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-4</span>
+                    </li>
+                    <li>
+                        <label>会计职称</label>
+                        <span>中级</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:153188189186" target="_blank">l53-l88l-9l86</a>
+                    </li>
+                    <li>
+                        <label>邮箱
+						</label>
+                        <a href="mailto:i@zrs.xyz" target="_blank">i@zrs.xyz</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="https://zrs.xyz/" target="_blank">zrs.xyz</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>办公技能</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Office办公</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>EXCEL+VBA</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>财会平台</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="#" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>某全日制大学 - 财务管理专业【学士】</span>
+                            <time>2010.9-2014.6</time>
+                        </h3>
+                        <p>基础课程：
+                            基础会计、税法、经济法、财务管理、宏微观经济学等</p>
+						<p>高级课程：
+                            管理会计、成本会计、中级会计实务、财务分析等</p>
+						<p>获得证书：
+                            计算机二级证书、大学英语CET4、会计从业资格证、<mark>计算机三级网络技术</mark></p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作履历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>某国有环保公司(环保/污水/PPP)【财务经理】</span>
+                            <time>2020.05 至 NOW</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>主持三个水质净化厂PPP项目公司的财务工作；</li>
+                            <li>参与项目公司筹备，水厂的建设期、运营期；</li>
+                            <li>协调上级部门办理水厂水费收取工作。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>世界第一建筑公司(铁路/房建/施工)【项目财务经理】</span>
+                            <time>2014.07-2019.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>2014.07-2015.09<mark>某铁客运专线项目</mark> [出纳]  负责资金收支与账户管理。</li>
+                            <li>2015.09-2019.12<mark>某重载煤运专线项目</mark>[会计]  负责资金收支、成本费用、税务申报、报表填报等工作，荣获岗位能手称号。</li>
+                            <li>2018.12-2019.12<mark>某分公司机关</mark> [税务主管]  负责分公司机关、大项目部及下属项目税务工作。</li>
+                            <li>2018.12-2019.12
+                                <mark>某市体育运动公园项目</mark> [项目财务经理]  负责项目资金收支与成本费用核算。</li>
+							<li>2018.12-2019.12
+                                <mark>某市市华润幸福里项目</mark> [项目财务经理]  负责项目资金收支与成本费用核算。</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>参与项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]PPP污水处理厂项目</span>
+                            <!--<span class="link">
+                                 <a href="#" target="_blank">Demo</a> 
+                            </span>-->
+                            <time>2020.5至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目简介：项目下设三个污水处理厂，总投资约5.8亿元，日处理总量8万方，均为全地下水厂，项目采用PPP运作模式，社会资本方投资建设和运营，政府方付费。</li>
+                            <li>参与职能：项目建设期会计核算；推动项目融资贷款；运营期成本核算；协调办理水费收取等工作。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]某铁客运专线项目</span>
+                            <time>2014.7-2015.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目简介：辽宁某高寒地区高铁建设项目，隧道居多，被网友戏称为地铁。</li>
+                            <li>参与职能：任项目部出纳职位。负责项目部资金收支和现金保管工作，因项目不允许开立网银，掌握并熟悉支票、电汇等各类银行柜台付款方式。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]某重载煤运专线项目</span>
+                            <time>2015.9-2019.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目简介：某重载煤运专线项目，标段位于山西省运城市境内，造价约5亿元，标长17公里，多为路基，有中桥、框构桥数座，下设三个搅拌站，建设工期4年。</li>
+                            <li>参与职能：任项目财务主管，全面负责项目所有财务工作，包括不限于资金收支、合同审核、成本费用核算、税务申报、报表填报、档案管理等工作。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目4]某市体育运动公园项目</span>
+
+                            <time>2018.12-2019.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目简介：第14届全运会赛事场馆，总投资约4.5亿元。</li>
+                            <li>
+                             参与职能：任项目财务经理 负责项目资金收支与成本费用核算。
+                            </li>
+                        </ul>
+                    </li>
+					<li>
+                        <h3>
+                            <span>[项目4]某市华润幸福里项目</span>
+
+                            <time>2018.12-2019.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目简介：住宅项目，一期总投资约2.4亿元。</li>
+                            <li>
+                             参与职能：任项目财务经理 负责项目资金收支与成本费用核算。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>&emsp;•&ensp;完整参与政府付费形式的PPP项目的筹备运作和建设运营，了解污水处理相关工艺和成本结构。</p>
+				<p>&emsp;•&ensp;多年建筑行业财务核算经验，熟悉铁路和房建项目，了解项目现场情况，熟悉简易计税和一般计税。</p>
+				<p>&emsp;•&ensp;财务是一项管理工作，并非局限于记账核算报表。传统会计记账将逐渐被计算机应用和AI替代，这并非内卷，而是生产力的革新。在革新的大潮中，唯有脚踏实地做事，不断的学习与进步，方可立足本职、做好本职，在财务管理方向上有所建树。</p>
+                <p>&emsp;•&ensp;<span class="mark-txt">“多静多思考，反省不张扬”</span>是我给自己总结的“十字箴言”，鞭策自己做人既不能以己度人，也不以人观己，要脚踏实地做事，坚持自己的梦想和本心。</p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2022 张荣松.最后更新时间
+            <time>2022年04月10日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+	<!--
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://rousongs.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+		-->
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
 </html>
